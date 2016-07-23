@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tblProdutos" layoutX="14.0" layoutY="14.0" prefHeight="425.0" prefWidth="439.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="clnCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="clnProduto" prefWidth="259.0" text="Produto" />
+            <TableColumn fx:id="clnValor" prefWidth="104.0" text="Valor" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblDespesas" layoutX="786.0" layoutY="14.0" prefHeight="425.0" prefWidth="439.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="clnEmpresa" prefWidth="236.0" text="Empresa" />
+          <TableColumn fx:id="clnValorEmpresa" prefWidth="94.0" text="Valor" />
+            <TableColumn fx:id="clnSaidaEmpresa" prefWidth="108.0" text="Saida" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblTudo" layoutX="34.0" layoutY="484.0" prefHeight="109.0" prefWidth="812.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="138.0">
+        <columns>
+          <TableColumn fx:id="clnFundo" prefWidth="76.0" text="Fundo" />
+            <TableColumn fx:id="clnSaida" prefWidth="89.0" text="Saída" />
+          <TableColumn fx:id="clnCredito" prefWidth="98.0" text="Crédito" />
+            <TableColumn fx:id="clnDebito" prefWidth="104.0" text="Débito" />
+            <TableColumn fx:id="clnVoucher" text="Voucher" />
+            <TableColumn fx:id="clnVisaVale" prefWidth="85.0" text="Visa Vale" />
+            <TableColumn fx:id="clnDespesa" prefWidth="100.0" text="Despesa" />
+            <TableColumn fx:id="clnTotal" prefWidth="74.0" text="Total" />
+            <TableColumn fx:id="clnLucro" prefWidth="105.0" text="Lucro do dia" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnGerarFechamento" layoutX="234.0" layoutY="449.0" mnemonicParsing="false" text="Gerar Fechamento" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="234.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="40.0" maxHeight="370.0" maxWidth="972.0" prefHeight="370.0" prefWidth="972.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="clnNome" prefWidth="284.0" text="NOME COMPLETO" />
+          <TableColumn fx:id="clnTel" prefWidth="171.0" text="TELEFONE" />
+            <TableColumn fx:id="clnCpf" prefWidth="113.0" text="CPF" />
+            <TableColumn fx:id="clnRg" prefWidth="117.0" text="RG" />
+            <TableColumn fx:id="clnValorTotal" prefWidth="161.0" text="VALOR TOTAL" />
+            <TableColumn fx:id="clnUltimoDia" minWidth="0.0" prefWidth="124.0" text="ULTIMO DIA" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnMostrar" layoutX="864.0" layoutY="416.0" mnemonicParsing="false" text="MOSTRAR CLIENTE (F4)" AnchorPane.bottomAnchor="203.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="9.0" layoutY="502.0" text="TIPO DE PRODUTO:" textFill="#ffc7c7" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="9.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdicionar" layoutX="459.0" layoutY="541.0" mnemonicParsing="false" text="ADICIONAR (F2)" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="459.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCadastrarNovo" layoutX="622.0" layoutY="416.0" mnemonicParsing="false" text="NOVO CLIENTE (F3)" AnchorPane.bottomAnchor="203.0" AnchorPane.rightAnchor="227.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAtualizar" layoutX="14.0" layoutY="384.0" mnemonicParsing="false" text="Atualizar lista (F5)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="384.0" />
+      <Label layoutX="214.0" layoutY="543.0" text="PESO" textFill="#ffc7c7" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="214.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPreco" layoutX="265.0" layoutY="543.0" prefHeight="25.0" prefWidth="116.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="265.0" />
+      <Label layoutX="14.0" layoutY="542.0" text="QTDADE:" textFill="#ffc7c7" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtd" layoutX="97.0" layoutY="543.0" prefHeight="25.0" prefWidth="54.0" text="1" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="97.0" />
+      <Button fx:id="btnExcluir" layoutX="898.0" layoutY="544.0" mnemonicParsing="false" text="Excluir cliente" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="898.0" />
+      <ComboBox fx:id="cboTipoProduto" layoutX="177.0" layoutY="503.0" onAction="#handleComboBoxAction" prefHeight="25.0" prefWidth="176.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="177.0" />
+      <Label layoutX="363.0" layoutY="502.0" text="NOME PRODUTO:" textFill="#ffc7c7" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="363.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cboProduto" layoutX="520.0" layoutY="503.0" prefHeight="25.0" prefWidth="279.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="520.0" />
+   </children>
+</AnchorPane>

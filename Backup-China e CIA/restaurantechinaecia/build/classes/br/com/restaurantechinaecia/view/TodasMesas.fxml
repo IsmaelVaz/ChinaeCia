@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #B22222;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane layoutX="106.0" layoutY="26.0" prefHeight="622.0" prefWidth="596.0" style="-fx-border-color: #000000;" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="114.0">
+         <children>
+            <Accordion layoutX="-28.0" layoutY="77.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="436.0" prefHeight="86.0" prefWidth="354.0" style="-fx-border-color: #000;" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <GridPane alignment="CENTER" layoutX="13.0" layoutY="11.0" prefHeight="65.0" prefWidth="329.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="113.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnJuntar" mnemonicParsing="false" text="JUNTAR CONTA" />
+                  <Button fx:id="btnPagar" mnemonicParsing="false" text="PAGAR (F4)" GridPane.columnIndex="2" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" text="CANCELAR ITEM" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="14.0" layoutY="210.0" prefHeight="200.0" prefWidth="354.0" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="14.0">
+        <content>
+          <AnchorPane fx:id="anchorProdutos" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="341.0" />
+        </content>
+      </ScrollPane>
+      <Pane fx:id="paneTotal" layoutX="14.0" layoutY="421.0" prefHeight="36.0" prefWidth="354.0" style="-fx-background-color: #ff0000;" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Label fx:id="lblValor" layoutX="130.0" layoutY="5.0" prefHeight="27.0" prefWidth="73.0" text="R$" textFill="#ffc7c7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="116.0" prefHeight="93.0" prefWidth="354.0" style="-fx-border-color: #000;">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" text="COMANDA:" textFill="#ffc7c7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="36.0" text="QTDADE" textFill="#ffc7c7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="36.0" prefHeight="20.0" prefWidth="104.0" text="CÓDIGO ITEM" textFill="#ffc7c7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtComanda" layoutX="89.0" layoutY="4.0" prefHeight="25.0" prefWidth="136.0" />
+            <TextField fx:id="txtCodigo" layoutX="89.0" layoutY="60.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="txtQtdade" layoutX="2.0" layoutY="60.0" prefHeight="25.0" prefWidth="61.0" text="1" />
+            <Button fx:id="btnVer" layoutX="238.0" layoutY="4.0" mnemonicParsing="false" text="VER" />
+            <Button fx:id="btnApagar" layoutX="280.0" layoutY="4.0" mnemonicParsing="false" text="Apagar" />
+            <Button layoutX="271.0" layoutY="60.0" mnemonicParsing="false" text="GRAVAR" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="-47.0" prefHeight="86.0" prefWidth="972.0" style="-fx-border-color: #000;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

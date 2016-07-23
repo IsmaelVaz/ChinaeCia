@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="restaurantechinaecia.jnlp">
+  <information>
+    <title>restaurantechinaecia</title>
+    <vendor>ismael</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/mariadb-java-client-1.3.6.jar" size="353282" download="eager" />
+    <jar href="restaurantechinaecia.jar" size="286759" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="restaurantechinaecia" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="br.com.restaurantechinaecia.view.MainChinaCia"  name="restaurantechinaecia" />
+  <update check="always"/>
+</jnlp>
