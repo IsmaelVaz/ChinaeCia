@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <LineChart fx:id="grafico" layoutX="-100.0" layoutY="-89.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="426.0" prefHeight="210.0" prefWidth="952.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <columns>
+            <TableColumn fx:id="clnData" prefWidth="136.0" text="Data" />
+            <TableColumn fx:id="clnFundo" prefWidth="87.0" text="Fundo" />
+            <TableColumn fx:id="clnSaida" prefWidth="107.0" text="Saída" />
+            <TableColumn fx:id="clnCredito" prefWidth="95.0" text="Crédito" />
+            <TableColumn fx:id="clnDebito" prefWidth="100.0" text="Débito" />
+            <TableColumn fx:id="clnVoucher" prefWidth="92.0" text="Voucher" />
+            <TableColumn fx:id="clnVisaVale" prefWidth="95.0" text="Visa Vale" />
+            <TableColumn fx:id="clnDespesa" prefWidth="84.0" text="Despesa" />
+            <TableColumn fx:id="clnTotal" prefWidth="72.0" text="Total" />
+            <TableColumn fx:id="clnLucro" prefWidth="83.0" text="Lucro do dia" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar style="-fx-background-color: #FFDAB9;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Mesas">
+            <items>
+              <MenuItem fx:id="itemCodigos" mnemonicParsing="false" text="Códigos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Despesas">
+            <items>
+              <MenuItem fx:id="itemDespesasDia" mnemonicParsing="false" text="Dia" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Conta">
+               <items>
+                  <MenuItem fx:id="itemCliente" mnemonicParsing="false" text="Cliente" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Login">
+            <items>
+              <MenuItem fx:id="itemLoginEntrar" mnemonicParsing="false" text="Entrar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

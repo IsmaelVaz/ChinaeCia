@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="14.0" prefHeight="385.0" prefWidth="952.0">
+         <columns>
+            <TableColumn fx:id="clnData" prefWidth="136.0" text="Data" />
+            <TableColumn fx:id="clnFundo" prefWidth="87.0" text="Fundo" />
+            <TableColumn fx:id="clnSaida" prefWidth="107.0" text="Saída" />
+            <TableColumn fx:id="clnCredito" prefWidth="95.0" text="Crédito" />
+            <TableColumn fx:id="clnDebito" prefWidth="100.0" text="Débito" />
+            <TableColumn fx:id="clnVoucher" prefWidth="92.0" text="Voucher" />
+            <TableColumn fx:id="clnVisaVale" prefWidth="95.0" text="Visa Vale" />
+            <TableColumn fx:id="clnDespesa" prefWidth="84.0" text="Despesa" />
+            <TableColumn fx:id="clnTotal" prefWidth="72.0" text="Total" />
+            <TableColumn fx:id="clnLucro" prefWidth="83.0" text="Lucro do dia" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblTudo" layoutX="24.0" layoutY="467.0" prefHeight="105.0" prefWidth="952.0">
+         <columns>
+            <TableColumn fx:id="clnData1" prefWidth="136.0" text="Data" />
+            <TableColumn fx:id="clnFundo1" prefWidth="87.0" text="Fundo" />
+            <TableColumn fx:id="clnSaida1" prefWidth="107.0" text="Saída" />
+            <TableColumn fx:id="clnCredito1" prefWidth="95.0" text="Crédito" />
+            <TableColumn fx:id="clnDebito1" prefWidth="100.0" text="Débito" />
+            <TableColumn fx:id="clnVoucher1" prefWidth="92.0" text="Voucher" />
+            <TableColumn fx:id="clnVisaVale1" prefWidth="95.0" text="Visa Vale" />
+            <TableColumn fx:id="clnDespesa1" prefWidth="84.0" text="Despesa" />
+            <TableColumn fx:id="clnTotal1" prefWidth="72.0" text="Total" />
+            <TableColumn fx:id="clnLucro1" prefWidth="83.0" text="Lucro do dia" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

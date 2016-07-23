@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TableView fx:id="tblProdutos" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <columns>
+        <TableColumn prefWidth="111.0" text="Código" fx:id="clnCodigo" />
+        <TableColumn prefWidth="675.0" text="Produto" fx:id="clnProduto" />
+        <TableColumn prefWidth="184.0" text="Preço" fx:id="clnPreco" />
+      </columns>
+    </TableView>
+    <TextField fx:id="txtNProduto" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="50.0" />
+    <TextField fx:id="txtPrecoProduto" prefHeight="25.0" prefWidth="388.0" AnchorPane.bottomAnchor="132.0" AnchorPane.rightAnchor="412.0" />
+    <Label text="Nome do Produto" AnchorPane.bottomAnchor="174.0" AnchorPane.leftAnchor="75.0">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="0.780" green="0.780" red="1.000" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label font="$x1" text="Preço" textFill="$x2" AnchorPane.bottomAnchor="135.0" AnchorPane.rightAnchor="885.0" />
+    <Button fx:id="btnAtualizar" font="$x1" mnemonicParsing="false" text="Atualizar" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="194.0" />
+    <Button fx:id="btnAdicionar" font="$x1" mnemonicParsing="false" text="Adicionar" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="348.0" />
+    <Button fx:id="btnRemover" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" text="Remover" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="66.0" />
+    <Label font="$x1" text="Categoria" textFill="$x2" AnchorPane.bottomAnchor="134.0" AnchorPane.rightAnchor="269.0" />
+    <ComboBox fx:id="cboCate" prefWidth="150.0" promptText="Selecione..." AnchorPane.bottomAnchor="132.0" AnchorPane.rightAnchor="87.0" />
+    <Label font="$x1" text="Peso" textFill="$x2" AnchorPane.bottomAnchor="89.0" AnchorPane.leftAnchor="75.0" />
+    <RadioButton fx:id="radioSim" mnemonicParsing="false" text="Sim" textFill="$x2" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="115.0" />
+    <RadioButton id="radioSim" fx:id="radioNao" mnemonicParsing="false" text="Não" textFill="$x2" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="175.0" />
+    <Pane fx:id="pane" prefHeight="49.0" prefWidth="359.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="21.0">
+      <children>
+        <TextField id="txtPrecoProduto" fx:id="txtVlrPeso" layoutX="180.0" layoutY="5.0" prefHeight="25.0" prefWidth="123.0" />
+        <Label font="$x1" layoutX="52.0" layoutY="14.0" text="Valor do Peso" textFill="$x2" />
+      </children>
+    </Pane>
+    <Pane prefHeight="49.0" prefWidth="552.0" AnchorPane.bottomAnchor="73.0" AnchorPane.rightAnchor="68.0">
+      <children>
+        <Label font="$x1" layoutX="14.0" layoutY="14.0" text="Estoque" textFill="$x2" />
+        <Label font="$x1" layoutX="103.0" layoutY="14.0" text="Qtd. Minima" textFill="$x2" />
+        <Label font="$x1" layoutX="327.0" layoutY="14.0" text="Qtd. Atual" textFill="$x2" />
+        <TextField id="txtPrecoProduto" fx:id="txtQtdMin" layoutX="207.0" layoutY="10.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField id="txtPrecoProduto" fx:id="txtQtdMax" layoutX="427.0" layoutY="10.0" prefHeight="25.0" prefWidth="69.0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

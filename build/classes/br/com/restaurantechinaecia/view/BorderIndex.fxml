@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar fx:id="menuBar" style="-fx-background-color: #FFDAB9;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Mesas">
+            <items>
+              <MenuItem fx:id="itemMesas" mnemonicParsing="false" text="Códigos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Fechamentos">
+            <items>
+              <MenuItem fx:id="itemFechaDia" mnemonicParsing="false" text="Diário" />
+                  <MenuItem fx:id="itemFechaMes" mnemonicParsing="false" text="Mensal" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Despesas">
+              <items>
+                <MenuItem fx:id="itemDespesaDia" mnemonicParsing="false" text="Dia" />
+                  <MenuItem fx:id="itemDespesaMes" mnemonicParsing="false" text="Mês" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Produtos">
+            <items>
+              <MenuItem fx:id="itemTodosProdutos" mnemonicParsing="false" text="Todos Produtos" />
+                  <MenuItem fx:id="itemProdutosVDia" mnemonicParsing="false" text="Vendidos no dia" />
+                  <MenuItem fx:id="itemProdutosVMes" mnemonicParsing="false" text="Vendidos no mes" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Contas">
+               <items>
+                  <MenuItem fx:id="itemContaCliente" mnemonicParsing="false" text="Cliente" />
+                  <MenuItem fx:id="itemContaUsuario" mnemonicParsing="false" text="Usuario" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Relatorios">
+              <items>
+                <MenuItem fx:id="itemRelatorioFecha" mnemonicParsing="false" text="Lucro" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Login">
+               <items>
+                  <MenuItem fx:id="itemLoginEntrar" mnemonicParsing="false" text="Entrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Diversos">
+               <items>
+                  <MenuItem fx:id="itemConfig" mnemonicParsing="false" text="Config" />
+               </items>
+            </Menu>
+        </menus>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </MenuBar>
+   </top>
+</BorderPane>

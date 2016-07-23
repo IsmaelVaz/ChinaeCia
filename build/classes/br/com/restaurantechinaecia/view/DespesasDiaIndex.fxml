@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableView" layoutX="40.0" layoutY="84.0" prefHeight="336.0" prefWidth="957.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="clnNEmpresa" prefWidth="567.0" text="Nome da empresa" />
+          <TableColumn fx:id="clnVEmpresa" prefWidth="264.0" text="Valor" />
+            <TableColumn fx:id="clnVSaida" prefWidth="114.0" text="Saida" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="398.0" text="NOME DA EMPRESA" textFill="#ffc7c7" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="400.0" text="VALOR DA DESPESA" textFill="#ffc7c7" AnchorPane.bottomAnchor="230.0" AnchorPane.rightAnchor="306.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValor" layoutX="734.0" layoutY="397.0" prefHeight="25.0" prefWidth="266.0" AnchorPane.bottomAnchor="228.0" AnchorPane.rightAnchor="14.0" />
+      <Button fx:id="btnAdicionar" layoutX="641.0" layoutY="471.0" mnemonicParsing="false" text="Adicionar" AnchorPane.bottomAnchor="149.0" AnchorPane.rightAnchor="280.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAtualizar" layoutX="754.0" layoutY="471.0" mnemonicParsing="false" text="Atualizar" AnchorPane.bottomAnchor="149.0" AnchorPane.rightAnchor="172.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemover" layoutX="862.0" layoutY="471.0" mnemonicParsing="false" text="Remover" AnchorPane.bottomAnchor="149.0" AnchorPane.rightAnchor="63.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="radioSaida" layoutX="475.0" layoutY="364.0" mnemonicParsing="false" text="SAIDA" textFill="#ffc7c7" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="475.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioMetade" layoutX="598.0" layoutY="366.0" mnemonicParsing="false" text="METADE" textFill="#ffc7c7" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="598.0">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <Pane fx:id="paneMetade" layoutX="556.0" layoutY="422.0" prefHeight="38.0" prefWidth="444.0" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="556.0">
+         <children>
+            <Label layoutX="32.0" layoutY="11.0" text="VALOR SAIDA" textFill="#ffc7c7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrecoMetade" layoutX="163.0" layoutY="7.0" prefHeight="25.0" prefWidth="266.0" />
+         </children>
+      </Pane>
+      <ComboBox fx:id="cboEmpresa" layoutX="172.0" layoutY="397.0" prefHeight="25.0" prefWidth="340.0" promptText="SELECIONE A EMPRESA" AnchorPane.bottomAnchor="228.0" AnchorPane.leftAnchor="172.0" />
+      <RadioButton fx:id="radioNenhum" layoutX="720.0" layoutY="364.0" mnemonicParsing="false" text="NENHUM" textFill="#ffc7c7" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="720.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
