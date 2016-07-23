@@ -18,6 +18,7 @@ public class BorderADMController implements Initializable{
 		// TODO Auto-generated constructor stub
 		this.main=main;
 	}
+//comentario inicial
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
